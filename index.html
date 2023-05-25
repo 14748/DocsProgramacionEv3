@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="refresh" content="1;url=html/0089f5ac-a8ac-3338-2bc0-eba65c98c3c0.htm">
+	<script type="text/javascript">
+		// Use an alternate default page if a topic is specified in the query string
+		var location = window.location;
+		var queryString = location.search;
+		if(queryString != "")
+		{
+			var idx, options = queryString.split(/[\?\=\&]/);
+			for(idx = 0; idx < options.length; idx++)
+			{
+				// Don't allow javascript, or references outside the current site
+				if(options[idx] == "topic" && idx + 1 < options.length && options[idx + 1].match(/^\w[\w\/.-]*$/))
+				{
+					location.replace(location.origin + location.pathname + options[idx + 1]);
+					break;
+				}
+			}
+		}
+		else
+			location.replace("html/0089f5ac-a8ac-3338-2bc0-eba65c98c3c0.htm");
+	</script>
+	<title>A Sandcastle Documented Class Library - Redirect</title>
+</head>
+<body>
+	<p>If you are not redirected automatically, follow this link to the <a href="html/0089f5ac-a8ac-3338-2bc0-eba65c98c3c0.htm">default topic</a>.</p>
+</body>
+</html>
